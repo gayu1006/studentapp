@@ -1,4 +1,4 @@
-FROM node:24-apline
+FROM node:24-alpine
 COPY . /opt/
 WORKDIR /opt 
 RUN npm install && npm run build 
