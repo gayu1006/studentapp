@@ -1,5 +1,5 @@
 FROM maven:3.8.4-openjdk-17
-LABLE maintainer="Gayatri Dwarkunde<gayatridwarkunde10@gmail.com>"" 
+LABEL maintainer="Gayatri Dwarkunde<gayatridwarkunde10@gmail.com>"" 
 COPY ./opt/
 WORKDIR /opt
 RUN mvn clean package
