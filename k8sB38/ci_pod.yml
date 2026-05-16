@@ -2,7 +2,7 @@
  kind: Pod
  metadata:
    name: nginxci-pod
-   lables:
+   labels:
      app: nginxci
 spec:
     containers:
