@@ -4,7 +4,7 @@
    name: nginxci-pod
    lables:
      app: nginxci
-   spec:
+spec:
     containers:
           - image: nginx:latest
               ports:
