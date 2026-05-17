@@ -1,0 +1,26 @@
+ appipVersion: v1
+ kind: Pod
+ metadata:
+  name: nginxlb-pod
+  labels:
+    app: nginxlb
+ spec:
+  containers:
+  - name: nginxcont
+    image: nginx:latest
+    ports:
+    - containerPort: 80
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginxlb
+spec:
+  selector:
+    app: nginxlb
+  type: LoadBalancer
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
